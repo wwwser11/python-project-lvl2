@@ -10,6 +10,7 @@ description='Generate diff')
     parser.add_argument('-f', '--format',
                     help='set format of output')
 
-    parser.print_help()
-
+    args = parser.parse_args()
+    print(args.fist_file, args.second_file)
+    
 
