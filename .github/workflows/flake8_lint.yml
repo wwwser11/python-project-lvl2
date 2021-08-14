@@ -21,6 +21,8 @@ jobs:
         # make depends on poetry
       - name: Install dependencies
         run: |
+          python -m pip install --upgrade pip
+          pip install poetry
           make build
           make publish
           make package-install
